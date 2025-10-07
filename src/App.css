@@ -1,0 +1,95 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background setup */
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main form container */
+form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Each input field block */
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input styling */
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* Input focus effect */
+input[type="text"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Error message */
+p {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  width: 100%;
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Disabled state */
+input[type="submit"]:disabled {
+  background-color: #b2aefc;
+  cursor: not-allowed;
+}
+
+/* Hover effect for submit */
+input[type="submit"]:hover:not(:disabled) {
+  background-color: #584ee2;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  form {
+    width: 90%;
+    padding: 25px;
+  }
+}
